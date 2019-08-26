@@ -24,6 +24,8 @@ class GameScene: SKScene {
     var zombieInvincibleDueToHit = false
     let cameraNode = SKCameraNode()
     let cameraMovePointsPerSec: CGFloat = 200.0
+    let livesLabel = SKLabelNode(fontNamed: "Glimstick")
+    let catLabel = SKLabelNode(fontNamed: "Glimstick")
     
     var cameraRect: CGRect {
         let x = cameraNode.position.x - size.width/2 + (size.width - playableRect.width)/2
@@ -161,6 +163,27 @@ class GameScene: SKScene {
         addChild(cameraNode)
         camera = cameraNode
         cameraNode.position = CGPoint(x: size.width/2, y: size.height/2)
+        
+        livesLabel.text = "Lives: \(lives)"
+        livesLabel.fontColor = .black
+        livesLabel.fontSize = 100
+        livesLabel.zPosition = 150
+        livesLabel.horizontalAlignmentMode = .left
+        livesLabel.verticalAlignmentMode = .bottom
+        livesLabel.position = CGPoint(x: -playableRect.size.width/2 + CGFloat(20),
+                                      y: -playableRect.size.height/2 + CGFloat(20))
+        cameraNode.addChild(livesLabel)
+        
+        catLabel.text = "Cats: 0"
+        catLabel.fontColor = .black
+        catLabel.fontSize = 100
+        catLabel.zPosition = 150
+        catLabel.horizontalAlignmentMode = .right
+        catLabel.verticalAlignmentMode = .bottom
+//        catLabel.position = CGPoint.zero
+        catLabel.position = CGPoint(x: playableRect.size.width/2 - CGFloat(20),
+                                    y: -playableRect.size.height/2 + CGFloat(20))
+        cameraNode.addChild(catLabel)
     }
     
     func backgroundNode() -> SKSpriteNode {
@@ -409,6 +432,8 @@ class GameScene: SKScene {
             }
             targetPosition = node.position
         }
+        
+        catLabel.text = "Cats: \(trainCount)"
         
         if trainCount >= 15 && !gameOver {
             gameOver = true

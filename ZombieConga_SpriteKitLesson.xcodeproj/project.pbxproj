@@ -20,6 +20,7 @@
 		3F4CBE0D22D5599D000B1CD3 /* hitCatLady.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F4CBE0822D5599D000B1CD3 /* hitCatLady.wav */; };
 		3F4CBE0E22D5599D000B1CD3 /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F4CBE0922D5599D000B1CD3 /* backgroundMusic.mp3 */; };
 		3F4CBE1022D7F07E000B1CD3 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CBE0F22D7F07E000B1CD3 /* GameOverScene.swift */; };
+		3F8AC5EB231454230075CA2B /* GLIMSTIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 3F8AC5EA231454220075CA2B /* GLIMSTIC.TTF */; };
 		3FE5AE1022DD40850037F671 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE5AE0F22DD40850037F671 /* MainMenuScene.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		3F4CBE0822D5599D000B1CD3 /* hitCatLady.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitCatLady.wav; sourceTree = "<group>"; };
 		3F4CBE0922D5599D000B1CD3 /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
 		3F4CBE0F22D7F07E000B1CD3 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		3F8AC5EA231454220075CA2B /* GLIMSTIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = GLIMSTIC.TTF; sourceTree = "<group>"; };
 		3FE5AE0F22DD40850037F671 /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 				3F4CBDF922C3D854000B1CD3 /* LaunchScreen.storyboard */,
 				3F4CBDEA22C3D853000B1CD3 /* AppDelegate.swift */,
 				3F4CBDFC22C3D854000B1CD3 /* Info.plist */,
+				3F8AC5EA231454220075CA2B /* GLIMSTIC.TTF */,
 			);
 			path = ZombieConga_SpriteKitLesson;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F8AC5EB231454230075CA2B /* GLIMSTIC.TTF in Resources */,
 				3F4CBE0B22D5599D000B1CD3 /* lose.wav in Resources */,
 				3F4CBDF622C3D853000B1CD3 /* Main.storyboard in Resources */,
 				3F4CBE0E22D5599D000B1CD3 /* backgroundMusic.mp3 in Resources */,
